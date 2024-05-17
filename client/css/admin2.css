@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #424242;
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+main {
+  margin-top: 8%;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 60px; */
+  position: relative;
+  top: 18%;
+  /* transform: translateY(-50%); */
+}
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contWrap {
+  width: 100%;
+  max-width: 1070px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.navCont {
+  width: 28%;
+  background-color: #eaeaea;
+  padding: 30px 20px;
+}
+.navCont li {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.navCont li.navTit {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+.navCont li.navTit.n1 {
+  margin-top: 0;
+}
+
+.infoCont {
+  width: 70%;
+}
+
+.infoCont h3 {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.infoCont h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.topArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #000;
+  padding-bottom: 10px;
+}
+
+/* 기본 레이아웃 end */
+
+.col {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.editbutton {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  line-height: 32px;
+}
+
+.adminList {
+  margin: 0;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 0;
+  text-align: center;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+.productList.adminList {
+  grid-template-columns: 1fr 2fr 4fr 3fr 2fr;
+}
+.orderList.adminList {
+  grid-template-columns: 0.6fr 2fr 1fr 1fr 1fr;
+}
+
+.listBox {
+  text-align: center;
+  width: calc((100% - 180px) / 3);
+}
+
+.listBox input[type="text"] {
+  width: 100%;
+}
+
+.editBtn {
+  width: 60px;
+  height: 38px;
+}
+
+.designInput {
+  height: 40px;
+  outline: none;
+  border-bottom: solid 1px #000;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s;
+  width: 100%;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+}
+
+.adminList .designInput:nth-child(2) {
+  margin-top: 6px;
+}
+select.designInput {
+  padding: 0 10px;
+}
+
+.productImg img {
+  width: 100px;
+}
+
+.designButton {
+  width: auto !important;
+  height: 36px;
+  padding: 0 16px;
+}
+.adminTit {font-size: 24px; margin-bottom: 60px;}

@@ -1,0 +1,82 @@
+<!-- 은지 > 회원가입 페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carryAll_회원가입 완료</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <!-- 헤더 가져오기 -->
+  <header id="header"></header>
+
+  <!-- 컨텐츠 -->
+  <section style="padding-bottom: 100px;" class="container">
+    <form id="loginForm">
+      <h2 style="margin-bottom: 20px;" class="joinTit">Welcome!</h2>
+      <p class="subTit"><span style="font-weight: 500;" class="localName">신규회원</span> 님, 가입을 축하드려요.<br>carryAll 의 다양한 혜택을 받아보세요!</p>
+      <div class="joinFinishedImg">
+        <img src="../img/joinFinished.png" alt="carryAll">
+      </div>
+      <div class="btnWrap">
+        <button type="button" class="snsJoin home">홈으로</button>
+        <button style="background-color: #424242; color: #fff;" type="button" class="snsJoin joinLogin">로그인</button>
+      </div>
+      
+    </form>
+  </section>
+
+  <!-- 푸터 가져오기 -->
+  <footer id="footer"></footer>
+
+  <!-- 탑버튼 가져오기 -->
+  <div class="top">top</div>
+
+  <script src="../js/top.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  
+  <!-- 가입완료 폼 script -->
+  <script>
+    // 1. 홈으로 버튼 클릭 시 이동
+    const homeButton = document.querySelector('.snsJoin.home');
+    homeButton.addEventListener('click', function() {
+      window.location.href = '/'; // 메인 이동
+    });
+
+    // 2. 로그인 버튼 클릭 시 이동
+    const loginButton = document.querySelector('.snsJoin.joinLogin');
+    loginButton.addEventListener('click', function() {
+      window.location.href = '/loginMember'; // 로그인 페이지 이동
+    });
+
+    // 3. user 정보 반영하기
+    // function userMypage() {
+    //     axios.get("/api/mypage")
+    //       .then((response) => {
+    //         const userData = response.data;
+    
+    //         if (userData) {
+    //           const localName = document.querySelectorAll('.localName');
+    //           localName.forEach(name => {
+    //             name.innerHTML = userData.name;
+    //           });
+    //         }
+    
+    //       })
+    //       .catch((error) => {
+    //         console.error('로그인 여부 확인 중 오류 발생:', error);
+    //         // alert("로그인이 필요합니다.");
+    //         window.location.href = "/";
+    //       });
+          
+    //   }
+    
+    //   userMypage();
+
+  </script>
+</body>
+</html>
